@@ -20,7 +20,8 @@ const notifyOptions = {
 refs.inputField.addEventListener('input', debounce(onFieldInput, DEBOUNCE_DELAY));
 
 function onFieldInput(e) {
-    const name = e.target.value;
+    const name = e.target.value.trim();
+    console.log(name);
 
     if (name === '') {
         clearAll();
