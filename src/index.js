@@ -46,7 +46,7 @@ function onFieldInput(e) {
 
             Notify.info('Too many matches found. Please enter a more specific name.', notifyOptions);
         })
-        .catch((error) => { catchError() });
+        .catch(catchError);
 }
 
 function clearAll() {
